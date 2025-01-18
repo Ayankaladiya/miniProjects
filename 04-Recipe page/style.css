@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", serif;
+  background-color: hsl(29, 53%, 90%);
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: hsl(14, 45%, 36%);
+}
+
+b {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+li,
+p {
+  color: hsl(24, 5%, 18%);
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 6.25rem;
+
+}
+
+.container {
+  width: 660px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.125rem;
+  padding: 2rem;
+}
+
+.omelette_img {
+  width: 100%;
+  border-radius: 0.875rem;
+}
+
+.container h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 700;
+}
+
+.container p {
+  font-size: 0.9375rem;
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 0.625rem 1.5rem;
+}
+
+.preparation-time h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0;
+}
+
+.preparation-list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-list,
+.ingredients-list,
+.instructions-list {
+  padding-left: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+.preparation-list li,
+.ingredients-list li,
+.instructions-list li {
+  padding-left: 1.25rem;
+  line-height: 2;
+}
+
+.instructions-list li {
+  line-height: 1.6;
+}
+
+.nutrition-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.625rem;
+}
+
+.list {
+  padding-left: 2.25rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid hsl(30, 10%, 34%);
+  color: hsl(30, 10%, 34%);
+}
+
+.nutritional-values {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
