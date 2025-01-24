@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        class="main-background"
+        src="assets/images/background-desktop.png"
+        alt="main-background"
+      />
+      <div class="background-container">
+        <img
+          class="pattern-squiggly-line-top"
+          src="assets/images/pattern-squiggly-line-top.svg"
+          alt=""
+        />
+        <div class="pattern-line">
+          <img
+            class="pattern-lines"
+            src="assets/images/pattern-lines.svg"
+            alt=""
+          />
+        </div>
+        <img
+          class="pattern-circle"
+          src="assets/images/pattern-circle.svg"
+          alt=""
+        />
+        <img
+          class="pattern-squiggly-line-bottom-desktop"
+          src="assets/images/pattern-squiggly-line-bottom-desktop.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="main-container">
+        <div class="container">
+          <div class="heading">
+            <img src="assets/images/logo-full.svg" alt="" />
+            <h1>Your Journey to Coding Conf<br />2025 Starts Here!</h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <span class="upload">Upload Avatar</span>
+
+          <div class="form-container-2">
+            <div class="upload-area">
+              <label for="input-file" class="drop-area">
+                <input type="file" accept="image/*" id="input-file" hidden />
+                <div class="img-view">
+                  <img src="assets/images/icon-upload.svg" />
+                  <p>Drag and drop or click to upload</p>
+                </div>
+              </label>
+            </div>
+            <section class="user-form">
+              <div class="info">
+                <img src="assets/images/icon-info.svg" alt="" />
+                <span>Upload your photo (JPG or PNG, max size: 500KB)</span>
+              </div>
+              <label for="full_name">Full Name</label>
+              <input type="text" id="full_name" />
+
+              <label for="email_address">Email Address</label>
+              <input type="text" id="email_address" required />
+              <!-- <div class="error e_frem">
+                <img src="" alt="">
+              </div> -->
+              <label for="github_username">GitHub Username</label>
+              <input type="text" id="github_username" />
+              <button class="generateBtn">Generate My Ticket</button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
