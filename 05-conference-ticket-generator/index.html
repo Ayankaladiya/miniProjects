@@ -38,41 +38,51 @@
   <body>
     <main>
       <img
-        class="main-background"
+        class="main-background bg-img"
         src="assets/images/background-desktop.png"
         alt="main-background"
       />
-      <div class="background-container">
-        <img
-          class="pattern-squiggly-line-top"
-          src="assets/images/pattern-squiggly-line-top.svg"
-          alt=""
-        />
-        <div class="pattern-line">
-          <img
-            class="pattern-lines"
-            src="assets/images/pattern-lines.svg"
-            alt=""
-          />
-        </div>
-        <img
-          class="pattern-circle"
-          src="assets/images/pattern-circle.svg"
-          alt=""
-        />
-        <img
-          class="pattern-squiggly-line-bottom-desktop"
-          src="assets/images/pattern-squiggly-line-bottom-desktop.svg"
-          alt=""
-        />
-      </div>
+      <img
+        class="pattern-squiggly-line-top bg-img"
+        src="assets/images/pattern-squiggly-line-top.svg"
+        alt=""
+      />
+      <img
+        class="pattern-lines bg-img"
+        src="assets/images/pattern-lines.svg"
+        alt=""
+      />
+      <img
+        class="pattern-circle bg-img"
+        src="assets/images/pattern-circle.svg"
+        alt=""
+      />
+      <img
+        class="pattern-squiggly-line-bottom-desktop bg-img"
+        src="assets/images/pattern-squiggly-line-bottom-desktop.svg"
+        alt=""
+      />
 
       <div class="main-container">
         <div class="container">
           <div class="heading">
             <img src="assets/images/logo-full.svg" alt="" />
-            <h1>Your Journey to Coding Conf<br />2025 Starts Here!</h1>
-            <p>Secure your spot at next year's biggest coding conference.</p>
+            <div class="first">
+              <h1>Your Journey to Coding Conf<br />2025 Starts Here!</h1>
+              <p>Secure your spot at next year's biggest coding conference.</p>
+            </div>
+            <div class="second">
+              <h1 class="ticket-heading">
+                Congrats, <span class="user">Saitama</span>! <br />Your ticket
+                is ready.
+              </h1>
+              <p class="ticket-update">
+                We've emailed your ticket to<br /><span class="email"
+                  >ayankaladiya@gmail.com</span
+                >
+                and will send updates in<br />the run up to the event.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -83,30 +93,103 @@
             <div class="upload-area">
               <label for="input-file" class="drop-area">
                 <input type="file" accept="image/*" id="input-file" hidden />
-                <div class="img-view">
-                  <img src="assets/images/icon-upload.svg" />
+                <div class="img-view upload_border">
+                  <img
+                    class="main-img view-img"
+                    src="assets/images/icon-upload.svg"
+                  />
                   <p>Drag and drop or click to upload</p>
+                  <div class="img-btn">
+                    <button class="remove-btn">Remove Image</button>
+                    <label for="input-file" class="change-btn"
+                      >Change Image</label
+                    >
+                  </div>
                 </div>
               </label>
             </div>
-            <section class="user-form">
+
+            <form method="get" class="user-form input-error">
               <div class="info">
                 <img src="assets/images/icon-info.svg" alt="" />
                 <span>Upload your photo (JPG or PNG, max size: 500KB)</span>
               </div>
-              <label for="full_name">Full Name</label>
-              <input type="text" id="full_name" />
 
-              <label for="email_address">Email Address</label>
-              <input type="text" id="email_address" required />
-              <!-- <div class="error e_frem">
-                <img src="" alt="">
-              </div> -->
-              <label for="github_username">GitHub Username</label>
-              <input type="text" id="github_username" />
-              <button class="generateBtn">Generate My Ticket</button>
-            </section>
+              <div class="form-data data_1">
+                <label for="username">Full Name</label>
+                <input
+                  id="username"
+                  type="text"
+                  class="form-control"
+                  placeholder="Full name"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="error err" id="usernameError">
+                <img src="assets/images/icon-info.svg" alt="info" />
+                <span>Please enter name</span>
+              </div>
+              <div class="form-data data_2">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email address"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="error err" id="emailError">
+                <img src="assets/images/icon-info.svg" alt="info" />
+                <span>Please enter valid email address.</span>
+              </div>
+              <div class="form-data data_3">
+                <label for="githubUsername">Github Username</label>
+                <input
+                  id="githubUsername"
+                  type="text"
+                  class="form-control"
+                  placeholder="Github username"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="error err" id="githubusernameError">
+                <img src="assets/images/icon-info.svg" alt="info" />
+                <span>Please enter github username.</span>
+              </div>
+              <button class="formSubmit">Generate My Ticket</button>
+            </form>
           </div>
+        </div>
+        <div class="ticket-container">
+          <img src="assets/images/pattern-ticket.svg" alt="" />
+          <div class="ticket-info coding-conf">
+            <div class="ticker_coding-conf">
+              <img src="assets/images/logo-mark.svg" alt="" />
+              <div class="c_conf">
+                <h2>Coding Conf</h2>
+              </div>
+            </div>
+            <p>Jan 31, 2025 / Austin, Tx</p>
+          </div>
+          <div class="ticket-info user-details">
+            <img
+              class="user_image"
+              src="assets/images/image-avatar.jpg"
+              alt=""
+            />
+            <div class="user_name">
+              <p class="name">Saitama</p>
+              <div class="gitHub_username">
+                <img src="assets/images/icon-github.svg" alt="" />
+                <p class="github_id">Saitama</p>
+              </div>
+            </div>
+          </div>
+          <div class="numbers">#01609</div>
         </div>
       </div>
     </main>
