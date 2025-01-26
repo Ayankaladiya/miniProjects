@@ -128,6 +128,15 @@ function uploadImage() {
   img_btn.style.display = "block";
 }
 
+dropArea.addEventListener("dragover", (e) => {
+  e.preventDefault();
+});
+dropArea.addEventListener("drop", (e) => {
+  e.preventDefault();
+  inputFile.files = e.dataTransfer.files;
+  uploadImage();
+});
+
 remove_btn.addEventListener("click", () => {
   main_img.src = "assets/images/icon-upload.svg";
   img_btn.style.display = "none";
