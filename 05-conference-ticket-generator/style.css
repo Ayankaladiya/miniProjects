@@ -170,8 +170,7 @@ main {
   cursor: pointer;
 }
 
-.img-btn button,
-.img-btn label {
+.img-btn button {
   padding: 4px 6px;
   font-size: 14px;
   border: none;
@@ -181,10 +180,19 @@ main {
   cursor: pointer;
 }
 
+.change-btn {
+  padding: 4px 6px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
 .user-img {
   /* display: flex; */
   flex-direction: column;
-
   position: relative;
   top: 20px;
   width: 50px;
@@ -192,8 +200,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 .info {
   display: flex;
@@ -386,4 +392,274 @@ input:hover {
 
 .display_element {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .first h1 {
+    font-size: 42px;
+  }
+
+  .ticket-container img {
+    width: 540px;
+  }
+
+  .second h1 {
+    font-size: 48px;
+  }
+
+  .second p {
+    font-size: 15px;
+  }
+
+  .coding-conf img {
+    width: 34px;
+  }
+
+  .coding-conf {
+    top: 54%;
+  }
+
+  .c_conf h2 {
+    font-size: 32px;
+  }
+
+  .coding-conf p {
+    font-size: 12px;
+  }
+
+  .user-details img {
+    width: 60px;
+    height: 65px;
+    border-radius: 8px;
+  }
+
+  .user-details {
+    bottom: 17%;
+    gap: 14px;
+  }
+
+  .gitHub_username img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .numbers {
+    right: -500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ticket-container img {
+    width: 480px;
+  }
+
+  .second h1 {
+    font-size: 40px;
+  }
+
+  .second p {
+    font-size: 15px;
+  }
+
+  .coding-conf img {
+    width: 34px;
+  }
+
+  .coding-conf {
+    top: 54%;
+  }
+
+  .c_conf h2 {
+    font-size: 32px;
+  }
+
+  .coding-conf p {
+    font-size: 12px;
+  }
+
+  .user-details img {
+    width: 50px;
+    height: 55px;
+    border-radius: 8px;
+  }
+
+  .user-details {
+    bottom: 20%;
+    gap: 14px;
+  }
+
+  .gitHub_username img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .numbers {
+    right: -450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pattern-squiggly-line-bottom-desktop {
+    bottom: -10%;
+  }
+
+  .main-background {
+    height: 110vh;
+  }
+
+  .main-container {
+    height: 97vh;
+    top: 3vh;
+  }
+
+  .pattern-squiggly-line-top {
+    width: 60%;
+    top: 20%;
+  }
+
+  .first h1 {
+    font-size: 32px;
+  }
+
+  .first p {
+    font-size: 14px;
+  }
+
+  .view-img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .img-btn {
+    top: 20%;
+  }
+
+  /* .form-container */
+  .upload-area,
+  .img-view {
+    width: 350px;
+    height: 120px;
+  }
+
+  .img-view img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .img-view p {
+    font-size: 15px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+  input {
+    width: 350px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pattern-squiggly-line-bottom-desktop {
+    bottom: -5%;
+  }
+
+  .main-background {
+    height: 105vh;
+  }
+
+  .main-container {
+    height: 97vh;
+    top: 3vh;
+  }
+
+  .first h1 {
+    font-size: 28px;
+  }
+
+  .first p {
+    font-size: 14px;
+  }
+
+  /* .form-container */
+  .upload-area,
+  .img-view {
+    width: 300px;
+    height: 100px;
+  }
+
+  .img-view img {
+    width: 34px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+  }
+
+  .img-view p {
+    font-size: 14px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  input {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  /* This is ticket */
+
+
+  .ticket-container img {
+    width: 400px;
+  }
+
+  .second h1 {
+    font-size: 38px;
+  }
+
+  .second p {
+    font-size: 13px;
+  }
+
+  .coding-conf img {
+    width: 30px;
+  }
+
+  .coding-conf {
+    top: 56%;
+  }
+
+
+  .c_conf h2 {
+    font-size: 26px;
+  }
+
+  .coding-conf p {
+    font-size: 10px;
+    margin-left: 32%;
+  }
+
+  .user-details img {
+    width: 44px;
+    height: 45px;
+    border-radius: 8px;
+  }
+
+  .user-details {
+    bottom: 21%;
+    gap: 14px;
+  }
+
+  .gitHub_username img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .numbers {
+    right: -370px;
+    font-size: 20px;
+  }
 }
