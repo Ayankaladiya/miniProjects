@@ -501,16 +501,16 @@ input:hover {
 
 @media (max-width: 576px) {
   .pattern-squiggly-line-bottom-desktop {
-    bottom: -20%;
+    bottom: -10%;
   }
 
   .main-background {
-    height: 120vh;
+    height: 110vh;
   }
 
   .main-container {
     height: 97vh;
-    top: 14vh;
+    top: 4vh;
   }
 
   .pattern-squiggly-line-top {
@@ -559,16 +559,16 @@ input:hover {
 
 @media (max-width: 500px) {
   .pattern-squiggly-line-bottom-desktop {
-    bottom: -15%;
+    bottom: -5%;
   }
 
   .main-background {
-    height: 115vh;
+    height: 105vh;
   }
 
   .main-container {
     height: 97vh;
-    top: 14vh;
+    top: 4vh;
   }
 
   .first h1 {
